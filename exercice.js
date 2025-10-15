@@ -1,6 +1,21 @@
 // Exercice 1 : Boucle for : 
+let pyramidStars = "";
+
+for(let i = 0; i < 5; i++) {
+    pyramidStars += "*"
+    console.log(pyramidStars)
+}
 // Exercice 2 : Boucle foreach :
+let arraySuperHeros = ["Vénom", "Punisher", "Hulk", "Deadpool", "Spider-Man", "Wolverine"];
+const sentence = "je suis fan de ";
+
+arraySuperHeros.forEach(element => {
+    let result = sentence + element
+    console.log(result)
+});
+
 // Exercice 3 : Boucle while :
+
 // Exercice 4 : Boucles combinées :
 // Exercice 5.1 :
 // Exercice 5.2 :
