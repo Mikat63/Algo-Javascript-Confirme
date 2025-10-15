@@ -98,19 +98,28 @@ console.log(countDown);
   //     alert(numberUserTenNext + i);
   //   }
 
-// Exercice 5.5 :
-   numberUserToMultiply =   Number(prompt(
-       "Entrez un nombre"));
-    let multiplicationTable = ""
+// // Exercice 5.5 :
+//    numberUserToMultiply =   Number(prompt(
+//        "Entrez un nombre"));
+//     let multiplicationTable = ""
 
-  for(let i = 0; i <= 10; i++) {
-    let resultMultiply = numberUserToMultiply * i
-    multiplicationTable += `${numberUserToMultiply} x ${i} = ${resultMultiply}\n`
-  }
+//   for(let i = 0; i <= 10; i++) {
+//     let resultMultiply = numberUserToMultiply * i
+//     multiplicationTable += `${numberUserToMultiply} x ${i} = ${resultMultiply}\n`
+//   }
 
-  alert(multiplicationTable)
+//   alert(multiplicationTable)
 
 // Exercice 5.6 :
+ numberUserToMultiply =   Number(prompt(
+       "Entrez un nombre"));
+  let resultCount = 0
+
+for (let i = 1; i <= numberUserToMultiply; i++) {
+  resultCount += i
+}
+
+alert(resultCount)
 // Exercice 5.7 :
 // Exercice 5.8 :
 // Exercice 5.9 :
