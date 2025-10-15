@@ -86,7 +86,7 @@ console.log(countDown);
   // let count = 1;
 
   // while(count <= 10) {
-  //   console.log(numberUserTenNextWithWhile + count);
+  //   alert(numberUserTenNextWithWhile + count);
   //   count++;
   // }
 
@@ -95,10 +95,21 @@ console.log(countDown);
   //     "Entrez un nombre"));
     
   //   for (let i = 1; i <= 10; i++) {
-  //     console.log(numberUserTenNext + i);
+  //     alert(numberUserTenNext + i);
   //   }
 
 // Exercice 5.5 :
+   numberUserToMultiply =   Number(prompt(
+       "Entrez un nombre"));
+    let multiplicationTable = ""
+
+  for(let i = 0; i <= 10; i++) {
+    let resultMultiply = numberUserToMultiply * i
+    multiplicationTable += `${numberUserToMultiply} x ${i} = ${resultMultiply}\n`
+  }
+
+  alert(multiplicationTable)
+
 // Exercice 5.6 :
 // Exercice 5.7 :
 // Exercice 5.8 :
