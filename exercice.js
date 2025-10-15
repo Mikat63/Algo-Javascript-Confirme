@@ -35,28 +35,28 @@ while (countDown > 0) {
 
 console.log(countDown);
 
-// Exercice 4 : Boucles combinées :
-let arrayFriends = ["Hugo", "Jonathan", "Kevin", "Mathieu", "William"];
+// // Exercice 4 : Boucles combinées :
+// let arrayFriends = ["Hugo", "Jonathan", "Kevin", "Mathieu", "William"];
 
-for (let i = 0; i < arrayFriends.length; i++) {
-  const prenom = arrayFriends[i];
-  let j = 0;
-  let ligne = "";
-  while (j < i + 1) {
-    ligne += prenom + " ";
-    j++;
-  }
-  console.log(ligne);
-}
+// for (let i = 0; i < arrayFriends.length; i++) {
+//   const prenom = arrayFriends[i];
+//   let j = 0;
+//   let ligne = "";
+//   while (j < i + 1) {
+//     ligne += prenom + " ";
+//     j++;
+//   }
+//   console.log(ligne);
+// }
 
-// Exercice 5.1 :
+// // Exercice 5.1 :
 // let numberUser = Number(prompt("Entrez un nombre entre 1 et 3"));
 
 // while (numberUser < 1 || numberUser > 3) {
 //   alert("Raté !");
 //   numberUser = Number(prompt("Entrez un nombre compris entre 1 et 3"));
 // }
-// Exercice 5.2 :
+// // Exercice 5.2 :
 // let numberUserBetweenTenAndTwenty = Number(prompt(
 //   "Entrez un nombre compris entre 10 et 20"
 // ));
@@ -81,8 +81,23 @@ for (let i = 0; i < arrayFriends.length; i++) {
 // alert("Bravo!");
 
 // Exercice 5.3 :
+  // numberUserTenNextWithWhile =   Number(prompt(
+  //     "Entrez un nombre"));  
+  // let count = 1;
+
+  // while(count <= 10) {
+  //   console.log(numberUserTenNextWithWhile + count);
+  //   count++;
+  // }
 
 // Exercice 5.4 :
+  // numberUserTenNextWithFor =   Number(prompt(
+  //     "Entrez un nombre"));
+    
+  //   for (let i = 1; i <= 10; i++) {
+  //     console.log(numberUserTenNext + i);
+  //   }
+
 // Exercice 5.5 :
 // Exercice 5.6 :
 // Exercice 5.7 :
