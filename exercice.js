@@ -50,8 +50,38 @@ for (let i = 0; i < arrayFriends.length; i++) {
 }
 
 // Exercice 5.1 :
+// let numberUser = Number(prompt("Entrez un nombre entre 1 et 3"));
+
+// while (numberUser < 1 || numberUser > 3) {
+//   alert("Raté !");
+//   numberUser = Number(prompt("Entrez un nombre compris entre 1 et 3"));
+// }
 // Exercice 5.2 :
+// let numberUserBetweenTenAndTwenty = Number(prompt(
+//   "Entrez un nombre compris entre 10 et 20"
+// ));
+
+// while (
+//   numberUserBetweenTenAndTwenty < 10 ||
+//   numberUserBetweenTenAndTwenty > 20
+// ) {
+//   if (numberUserBetweenTenAndTwenty < 10) {
+//     alert("Plus grand!");
+//     numberUserBetweenTenAndTwenty =   Number(prompt(
+//       "Entrez un nombre compris entre 10 et 20"
+//     ));
+//   } else if (numberUserBetweenTenAndTwenty > 20) {
+//     alert("Plus petit!");
+//     numberUserBetweenTenAndTwenty = Number(prompt(
+//       "Entrez un nombre compris entre 10 et 20"
+//     ));
+//       }
+// }
+
+// alert("Bravo!");
+
 // Exercice 5.3 :
+
 // Exercice 5.4 :
 // Exercice 5.5 :
 // Exercice 5.6 :
