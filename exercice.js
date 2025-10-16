@@ -140,6 +140,7 @@ console.log(countDown);
 // while (count <= 20) {
 //   let input = prompt(`Entrez le nombre ${count}`);
 
+// input controle
 //   if (input === null) {
 //     alert("Le champ ne peut être vide !");
 //   } else if (input.trim() === "") {
@@ -149,6 +150,7 @@ console.log(countDown);
 //   } else {
 //     let promptNumberUser = Number(input);
 
+// transfer in variable the most bigger nbumber and number position
 //     if (promptNumberUser > mostBiggerUserNumber) {
 //       mostBiggerUserNumber = promptNumberUser;
 //       positionMostBigger = count;
@@ -160,39 +162,94 @@ console.log(countDown);
 // alert(` Le nombre le plus grand saisi est ${mostBiggerUserNumber}, saisi en position ${positionMostBigger} sur ${count - 1}`);
 
 // Exercice 5.9 :
-let mostBiggerUserNumber = 0;
+// let mostBiggerUserNumber = 0;
+// let count = 1;
+// let positionMostBigger = 0;
+// let input = prompt(`Entrez le nombre ${count}`);
+
+// input control
+// while (input !== null) {
+//    let promptNumberUser = Number(input);
+
+//   if (input.trim() === "") {
+//     alert("Le champ ne peut être vide !");
+//   } else if (isNaN(input)) {
+//     alert("Veuillez entrer un nombre uniquement !");
+//   } else {
+
+//     if (promptNumberUser === 0) {
+//       break;
+//     }
+
+// transfer in variable the most bigger nbumber and number position
+//     if (promptNumberUser > mostBiggerUserNumber) {
+//       mostBiggerUserNumber = promptNumberUser;
+//       positionMostBigger = count;
+//     }
+//     count++;
+//   }
+//   input = prompt(`Entrez le nombre ${count}`);
+// }
+
+// alert(
+//   ` Le nombre le plus grand saisi est ${mostBiggerUserNumber}, saisi en position ${positionMostBigger} sur ${
+//     count - 1
+//   }`
+// );
+
+// Exercice 5.10 :
+let price = 0;
 let count = 1;
-let positionMostBigger = 0;
-let input = prompt(`Entrez le nombre ${count}`);
+let moneyUser = "\n";
+let inputArticle = prompt(`Entrez le prix de l'article ${count}`);
 
-while (input !== null) {
-   let promptNumberUser = Number(input);
+// input control
+while (inputArticle !== null) {
+  let promptPriceUser = Number(inputArticle);
 
-  if (input.trim() === "") {
+  if (inputArticle.trim() === "") {
     alert("Le champ ne peut être vide !");
-  } else if (isNaN(input)) {
+  } else if (isNaN(inputArticle)) {
     alert("Veuillez entrer un nombre uniquement !");
   } else {
-   
-
-    if (promptNumberUser === 0) {
+    if (promptPriceUser === 0) {
       break;
     }
 
-    if (promptNumberUser > mostBiggerUserNumber) {
-      mostBiggerUserNumber = promptNumberUser;
-      positionMostBigger = count;
-    }
+    // sum of inputs
+    price += promptPriceUser;
+
     count++;
   }
-  input = prompt(`Entrez le nombre ${count}`);
+  inputArticle = prompt(`Entrez le prix de l'article  ${count}`);
 }
 
-alert(
-  ` Le nombre le plus grand saisi est ${mostBiggerUserNumber}, saisi en position ${positionMostBigger} sur ${
-    count - 1
-  }`
-);
+alert(`Le montant total de vos articles est de ${price}€`);
 
-// Exercice 5.10 :
+// given change part to customer
+let inputpaiement = Number(prompt("Insérez votre paiement"));
+let countGivenChange = inputpaiement - price;
+
+while  (countGivenChange < 0) {
+  alert(`montant insuffisant , il vous manque ${countGivenChange}€`);
+  inputpaiement = Number(prompt("Insérez votre paiement"));
+  countGivenChange = inputpaiement - price;
+} 
+  while (countGivenChange >= 10) {
+    moneyUser += "10 euros\n";
+    countGivenChange -= 10;
+  }
+  while (countGivenChange >= 5) {
+    moneyUser += "5 euros\n";
+    countGivenChange -= 5;
+  }
+  while (countGivenChange >= 1) {
+    moneyUser += "1 euro\n";
+    countGivenChange -= 1;
+  }
+
+
+alert(
+  `voici votre rendu monnaie sur vos achat d'un montant de ${price} :\n ${moneyUser}`
+);
 // Exercice 5.11 :
