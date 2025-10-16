@@ -56,6 +56,7 @@ console.log(countDown);
 //   alert("Raté !");
 //   numberUser = Number(prompt("Entrez un nombre compris entre 1 et 3"));
 // }
+
 // // Exercice 5.2 :
 // let numberUserBetweenTenAndTwenty = Number(prompt(
 //   "Entrez un nombre compris entre 10 et 20"
@@ -81,47 +82,81 @@ console.log(countDown);
 // alert("Bravo!");
 
 // Exercice 5.3 :
-  // numberUserTenNextWithWhile =   Number(prompt(
-  //     "Entrez un nombre"));  
-  // let count = 1;
+// let numberUserTenNextWithWhile =   Number(prompt(
+//     "Entrez un nombre"));
+// let count = 1;
 
-  // while(count <= 10) {
-  //   alert(numberUserTenNextWithWhile + count);
-  //   count++;
-  // }
+// while(count <= 10) {
+//   alert(numberUserTenNextWithWhile + count);
+//   count++;
+// }
 
 // Exercice 5.4 :
-  // numberUserTenNextWithFor =   Number(prompt(
-  //     "Entrez un nombre"));
-    
-  //   for (let i = 1; i <= 10; i++) {
-  //     alert(numberUserTenNext + i);
-  //   }
+// let numberUserTenNextWithFor =   Number(prompt(
+//     "Entrez un nombre"));
 
-// // Exercice 5.5 :
-//    numberUserToMultiply =   Number(prompt(
-//        "Entrez un nombre"));
-//     let multiplicationTable = ""
-
-//   for(let i = 0; i <= 10; i++) {
-//     let resultMultiply = numberUserToMultiply * i
-//     multiplicationTable += `${numberUserToMultiply} x ${i} = ${resultMultiply}\n`
+//   for (let i = 1; i <= 10; i++) {
+//     alert(numberUserTenNext + i);
 //   }
 
-//   alert(multiplicationTable)
+// // Exercice 5.5 :
+//    let numberUserToMultiply =   Number(prompt(
+//        "Entrez un nombre"));
+//     let multiplicationTable = "";
+
+//   for(let i = 0; i <= 10; i++) {
+//     let resultMultiply = numberUserToMultiply * i;
+//     multiplicationTable += `${numberUserToMultiply} x ${i} = ${resultMultiply}\n`;
+//   }
+
+//   alert(multiplicationTable);
 
 // Exercice 5.6 :
- numberUserToMultiply =   Number(prompt(
-       "Entrez un nombre"));
-  let resultCount = 0
+//  let numberUserToMultiply =   Number(prompt(
+//        "Entrez un nombre"));
+//   let resultCount = 0;
 
-for (let i = 1; i <= numberUserToMultiply; i++) {
-  resultCount += i
+// for (let i = 1; i <= numberUserToMultiply; i++) {
+//   resultCount += i;
+// }
+
+// alert(resultCount);
+
+// Exercice 5.7 :
+// let numberUserTofactorize = Number(prompt("Entrez un nombre"));
+// let resultFactorize = 1;
+
+// for (let i = 1; i <= numberUserTofactorize; i++) {
+//   resultFactorize *= i;
+// }
+
+// console.log(`Le factorielle de ${numberUserTofactorize} est ${resultFactorize}`);
+
+// Exercice 5.8 :
+let mostBiggerUserNumber = 0;
+let count = 1;
+
+while (count <= 20) {
+  let input = prompt(`Entrez le nombre ${count}`);
+
+  if (input === null) {
+    alert("Le champ ne peut être vide !");
+  } else if (input.trim() === "") {
+    alert("Les esspaces ne son pas autorisés !");
+  } else if (isNaN(input)) {
+    alert("Veuilez entrer un nombre uniquement !");
+  } else {
+    let promptNumberUser = Number(input);
+
+    if (promptNumberUser > mostBiggerUserNumber) {
+      mostBiggerUserNumber = promptNumberUser;
+    }
+    count++;
+  }
 }
 
-alert(resultCount)
-// Exercice 5.7 :
-// Exercice 5.8 :
+alert(mostBiggerUserNumber);
+
 // Exercice 5.9 :
 // Exercice 5.10 :
 // Exercice 5.11 :
