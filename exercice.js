@@ -135,6 +135,7 @@ console.log(countDown);
 // Exercice 5.8 :
 let mostBiggerUserNumber = 0;
 let count = 1;
+let positionMostBigger = 0;
 
 while (count <= 20) {
   let input = prompt(`Entrez le nombre ${count}`);
@@ -142,20 +143,21 @@ while (count <= 20) {
   if (input === null) {
     alert("Le champ ne peut être vide !");
   } else if (input.trim() === "") {
-    alert("Les esspaces ne son pas autorisés !");
+    alert("Les esspaces ne sont pas autorisés !");
   } else if (isNaN(input)) {
-    alert("Veuilez entrer un nombre uniquement !");
+    alert("Veuillez entrer un nombre uniquement !");
   } else {
     let promptNumberUser = Number(input);
 
     if (promptNumberUser > mostBiggerUserNumber) {
       mostBiggerUserNumber = promptNumberUser;
+      positionMostBigger = count;
     }
     count++;
   }
 }
 
-alert(mostBiggerUserNumber);
+alert(` Le nombre le plus grand saisi est ${mostBiggerUserNumber}, saisi en position ${positionMostBigger} sur ${count - 1}`);
 
 // Exercice 5.9 :
 // Exercice 5.10 :
